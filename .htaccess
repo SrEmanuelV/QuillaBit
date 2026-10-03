@@ -1,0 +1,15 @@
+# Desactivar la vista de directorio por seguridad
+Options -Indexes
+
+# Activar el motor de reescritura de URLs de Apache
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Si la petición NO es un archivo existente (como CSS, JS, imágenes)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    # Y si la petición NO es una carpeta existente
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Redirigir la petición a index.php pasando la ruta limpia en el parámetro 'url'
+    RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+</IfModule>
