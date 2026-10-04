@@ -3,6 +3,12 @@
  * Configuración General del Sistema - QuillaBit
  */
 
+/** 
+ * HORA DE COLOMBIA
+ */ 
+
+date_default_timezone_set('America/Bogota');
+
 // 1. Detección dinámica inteligente de la URL Base (Corregida para Raíz / Subcarpetas)
 $protocol  = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443)) ? "https://" : "http://";
 $host      = $_SERVER['HTTP_HOST'] ?? 'localhost';
