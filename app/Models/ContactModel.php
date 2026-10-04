@@ -43,8 +43,8 @@ class ContactModel {
             // 1. Iniciar la transacción de base de datos
             $this->db->beginTransaction();
 
-            $sql = "INSERT INTO mensajes_contacto (nombre, apellido, email, asunto, mensaje, fecha_creacion) 
-                    VALUES (:nombre, :apellido, :email, :asunto, :mensaje, :fecha_creacion)";
+            $sql = "INSERT INTO mensajes_contacto (nombre, apellido, email, asunto, mensaje, fecha_enviado) 
+                    VALUES (:nombre, :apellido, :email, :asunto, :mensaje, :fecha_enviado)";
             
             $stmt = $this->db->prepare($sql);
             
@@ -54,7 +54,7 @@ class ContactModel {
                 ':email'          => $email,
                 ':asunto'         => $asunto,
                 ':mensaje'        => $mensaje,
-                ':fecha_creacion' => $fechaColombia
+                ':fecha_enviado' => $fechaColombia
             ]);
 
             if ($resultado) {
