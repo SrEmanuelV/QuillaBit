@@ -50,16 +50,22 @@
                     </ul>
                 </div>
 
-                <!-- Columna 3: Servicios Destacados -->
+                <!-- Columna 3: Legales y Políticas -->
                 <div class="space-y-4">
                     <h3 class="text-base font-bold text-white tracking-wide uppercase border-l-2 border-[#1FD6C1] pl-3">
-                        Servicios
+                        Legales
                     </h3>
                     <ul class="space-y-2.5 text-sm font-medium text-[#EAF6F5]/80">
-                        <li class="hover:text-[#1FD6C1] transition-colors duration-200 cursor-default">Desarrollo Web A Medida</li>
-                        <li class="hover:text-[#1FD6C1] transition-colors duration-200 cursor-default">Aplicaciones Móviles</li>
-                        <li class="hover:text-[#1FD6C1] transition-colors duration-200 cursor-default">Arquitectura de Software</li>
-                        <li class="hover:text-[#1FD6C1] transition-colors duration-200 cursor-default">Consultoría Tecnológica</li>
+                        <li>
+                            <a href="<?= BASE_URL ?>/terminos-y-condiciones" class="hover:text-[#1FD6C1] transition-colors duration-200 block">
+                                Términos y Condiciones
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?= BASE_URL ?>/politica-de-privacidad" class="hover:text-[#1FD6C1] transition-colors duration-200 block">
+                                Política de Privacidad
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
