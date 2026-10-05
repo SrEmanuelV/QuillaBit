@@ -321,7 +321,7 @@ require_once __DIR__ . '/layouts/header.php';
                     <div>
                         <div class="h-48 bg-abismo relative overflow-hidden">
                             <img 
-                                src="<?= BASE_URL ?>/public/storage/projects-views/project3.jpg" 
+                                src="<?= BASE_URL ?>/public/storage/projects-views/kapital-previews.png" 
                                 alt="KAPITAL Finance System" 
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400/0D2B45/1FD6C1?text=KAPITAL+Finance';"
