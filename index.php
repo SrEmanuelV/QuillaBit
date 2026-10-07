@@ -42,11 +42,11 @@ $router = new Router();
 $router->get('/', __DIR__ . '/app/Views/index.php');
 $router->get('contacto', __DIR__ . '/app/Views/index.php');
 $router->get('sobre-nosotros', __DIR__ . '/app/Views/sobre-nosotros/index.php');
-$router->get('mision-y-vision', __DIR__ . '/app/Views/sobre-nosotros/index.php'); // Alias/Ruta amigable
 $router->get('servicios', __DIR__ . '/app/Views/servicios/index.php');
 $router->get('proyectos', __DIR__ . '/app/Views/proyectos/index.php');
 $router->get('politica-de-privacidad', __DIR__ . '/app/Views/politicas/index.php');
 $router->get('terminos-y-condiciones', __DIR__ . '/app/Views/terminos/index.php');
+$router->get('mision-y-vision', __DIR__ . '/app/Views/mision-vision/index.php');
 
 // --- RUTAS DE ACCIÓN / PETICIONES AJAX ---
 $router->post('contacto', ['app\Controllers\ContactController', 'enviar']);
